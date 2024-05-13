@@ -1,4 +1,12 @@
 :root {
+  /* Colors */
+  --background-main: #211522;
+  --background-main2: #36323B;
+  --background-main3: #211F21;
+  --font-color: white;
+  --background-message-user: #613659;
+  --background-message-user2: #402842;
+
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -38,6 +46,15 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: var(--background-main2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,6 +103,9 @@ body {
 }
 
 body {
+  color: var(--font-color);
+  background: var(--background-main3);
+  /*
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -93,6 +113,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 a {
